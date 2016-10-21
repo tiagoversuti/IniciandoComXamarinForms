@@ -12,7 +12,9 @@ namespace MVApp
         public App()
         {
             // The root page of your application
-            MainPage = new Views.LivrosView();
+            //MainPage = new Views.LivrosView();
+
+            MainPage = new NavigationPage(new Views.LivrosView());
         }
 
         protected override void OnStart()

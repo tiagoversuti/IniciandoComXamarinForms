@@ -11,7 +11,7 @@
     <ListView ItemsSource="{Binding  Livros}">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <TextCell Text="{Binding Titulo}" />
+          <TextCell Text="{Binding Nome}" />
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

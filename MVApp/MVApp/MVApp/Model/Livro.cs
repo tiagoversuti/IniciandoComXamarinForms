@@ -21,12 +21,12 @@ namespace MVApp.Model
             }
         }
 
-        private string titulo;
-        public string Titulo {
-            get { return titulo; }
+        private string nome;
+        public string Nome {
+            get { return nome; }
             set {
-                titulo = value;
-                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Titulo)));
+                nome = value;
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Nome)));
             }
         }
 

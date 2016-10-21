@@ -20,14 +20,14 @@ namespace MVApp.Model
                 this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Id)));
             }
         }
-        private int nome;
+        private string nome;
 
-        public int Nome
+        public string Nome
         {
             get { return nome; }
             set
             {
-                id = value;
+                nome = value;
                 this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Nome)));
             }
         }
