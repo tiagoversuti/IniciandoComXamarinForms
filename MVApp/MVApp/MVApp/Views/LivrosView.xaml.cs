@@ -15,6 +15,12 @@ namespace MVApp.Views
             InitializeComponent();
 
             this.BindingContext = new ViewModels.LivrosViewModel();
+
+            this.Lista.ItemTapped += async (sender, e) =>
+            {
+                var livro = e.Item as Model.Livro;
+                await App.Current.MainPage.Navigation.PushAsync(new Views.AutorView(livro.Autor));
+            };
         }
     }
 }

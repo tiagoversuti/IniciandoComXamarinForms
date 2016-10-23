@@ -10,9 +10,11 @@ namespace MVApp.Views
 {
     public partial class AutorView : ContentPage
     {
-        public AutorView()
+        public AutorView(Model.Autor autor)
         {
             InitializeComponent();
+
+            this.Autor.Text = autor.Nome;
         }
     }
 }

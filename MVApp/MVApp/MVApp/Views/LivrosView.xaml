@@ -8,7 +8,7 @@
   <StackLayout Padding="20" Spacing="10">
     <Button Text="Carregar" Command="{Binding CarregarCommand}"/>
     
-    <ListView ItemsSource="{Binding  Livros}">
+    <ListView ItemsSource="{Binding  Livros}" x:Name="Lista">
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell Text="{Binding Nome}" />
